@@ -1,0 +1,68 @@
+body {
+    background-color: grey;
+    text-align: center;
+    color: greenyellow;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+}
+
+li {
+    margin-top: 1rem;
+     display: flex;
+     
+    text-align: center ;
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid #0e3002;
+    /* background-color: #465e3d; */
+    background-color:#34452d;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #46cf15;
+}
+form {
+    border: 2px solid black;
+}
+
+
+p {
+    margin: 1rem;
+    text-align: center;
+}
+/* 
+p:hover {
+    color: red;
+    
+} */
+
+
+ .trash_can{
+   float: right;
+   position: relative;
+   
+   height: 20px;
+    width: 20px;
+    color: red;
+    
+    
+} 
+
+
+.done {
+    text-decoration: line-through;
+    color: red;
+}
+/* 
+p::after {
+    content: "\f00c";
+           font-size: 25px;
+        color: red;
+        margin-right: 15px;
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-weight: 900;
+        position: relative;
+       
+} */
+
+button {
+    content:"\f2ed";
+    color: red;
+}
