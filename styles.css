@@ -1,9 +1,11 @@
 body {
+    justify-content: center;
     background-color: grey;
     text-align: center;
+    align-items: center;
     color: greenyellow;
     font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-}
+    }
 
 li {
     margin-top: 1rem;
@@ -12,30 +14,24 @@ li {
     justify-content: center;
     align-items: center;
     border: 2px solid #0e3002;
-    /* background-color: #465e3d; */
     background-color:#34452d;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #46cf15;
-}
-form {
-    /* border: 2px solid black; */
-}
-
+    }
 
 p {
     margin: 1rem;
     text-align: center;
-}
+    font-size: 1.2rem;
+    }
 
  .trash_can{
-   height: 20px;
-    width: 20px;
+   font-size: 1.5rem;
     color: red;
-    
-    
-} 
+    } 
 
 .done {
     text-decoration: line-through;
     color: red;
-}
+    
+    }

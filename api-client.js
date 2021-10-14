@@ -7,8 +7,8 @@ async function getAllTodos() {
             .then((response) => response.json())
             .then((data) => {
             toTheDom(data)
-            toDoCount.innerHTML = `there are ${data.length} tasks left`
-            })
+            toDoCounter(data)
+        })
     }
     catch(err){
         console.log(err)
@@ -17,9 +17,9 @@ async function getAllTodos() {
    
 async function makeNewTodo(event){
     try{
-            event.preventDefault()
-            const input = userInput.value
-            const data = {todo: `${input}`, done: "false"}
+        event.preventDefault()
+        const input = userInput.value
+        const data = {todo: `${input}`, done: "false"}
             await fetch(url, {
                 method: "POST",
                 body: JSON.stringify(data),
@@ -46,7 +46,7 @@ async function deleteTodo(id){
 
 async function setTodoToStatus(id, checkbox){
     try{
-        let data = {}
+        const data = {}
         if (checkbox.checked == false){
             data = { done: "false"}
         }
