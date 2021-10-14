@@ -46,7 +46,7 @@ async function deleteTodo(id){
 
 async function setTodoToStatus(id, checkbox){
     try{
-        const data = {}
+        let data = {}
         if (checkbox.checked == false){
             data = { done: "false"}
         }
