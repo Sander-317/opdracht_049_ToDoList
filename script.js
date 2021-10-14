@@ -43,10 +43,8 @@ function isCheckBoxChecked(checkBox,  item,todoText){
 
 function toDoCounter(array){
     const filteredArray = array.filter(item => item.done === "true" )
-    
     const total = array.length
     const done = filteredArray.length
     const left = (total - done)
-    
     toDoCount.innerHTML = ` ${done} down ${left} to go`
 }
