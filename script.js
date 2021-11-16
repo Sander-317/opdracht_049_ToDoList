@@ -3,13 +3,14 @@ const toDoList = document.getElementById("todo-list")
 const userInput = document.querySelector("#user-input")
 const addTaskButton = document.getElementById("add-task-button")
 const toDoCount = document.getElementById("todo-count")
+const clearDoneButton = document.getElementById("clear-done-button")
 
 addTaskButton.addEventListener("click",  makeNewTodo)
 
 getAllTodos()
 
-
 function toTheDom(array){
+    toDoList.innerHTML = " "
    array.map((item) => {
      const newLi = document.createElement("li")
      const checkBox = document.createElement("input")
@@ -31,15 +32,12 @@ function toTheDom(array){
     })
 }
 
-// samantha ik heb gedaan wat je had laten zien ik heb alleen 1 vraag bij de if statement geef je alleen checkBox.checked 
-// door. checked de if statement automatische voor true of false?  
 function isCheckBoxChecked(checkBox,  item,todoText){
     checkBox.checked = item.done
     if (checkBox.checked) return todoText.classList.add("done")
     if (!checkBox.checked) return todoText.classList.remove("done")
 }
 
-// ik heb meteen jou systeem toegepast bij mijn todo counter dank je wel
 function toDoCounter(array){
     const filteredArray = array.filter(item => item.done ===  true )
     const total = array.length

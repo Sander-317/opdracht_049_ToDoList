@@ -34,11 +34,7 @@ async function makeNewTodo(event){
             catch(err){
                 console.log(err)
             }
-    //  dit heb ik gedaan zodat je niet meer de heletijd op refresh moet drukken
-    //  het rare is dat ik zelf het probleem niet had
-    //  en als ik nu  iets toevoeg of op de checkbox click dan verschijnen alle todos 2x voor een sec ongeveer en dan verdijnt de helft  
     getAllTodos() 
-    
 }
 
 async function deleteTodo(id){
@@ -50,10 +46,7 @@ async function deleteTodo(id){
     catch(err){
         console.log(err)
     }
-    //  HERHALING VAN COMMENT HIER BOVEN 
-    //  dit heb ik gedaan zodat je niet meer de heletijd op refresh moet drukken
-    //  het rare is dat ik zelf het probleem niet had
-    //  en als ik nu  iets toevoeg of op de checkbox click dan verschijnen alle todos 2x voor een sec ongeveer en dan verdijnt de helft
+   
     getAllTodos()
     
 }
@@ -71,11 +64,6 @@ async function setTodoToStatus(id, data){
     catch(err){
         console.log(err)
     }
-    //  HERHALING VAN COMMENT HIER BOVEN
-    //  dit heb ik gedaan zodat je niet meer de heletijd op refresh moet drukken
-    //  het rare is dat ik zelf het probleem niet had
-    //  en als ik nu  iets toevoeg of op de checkbox click dan verschijnen alle todos 2x voor een sec ongeveer en dan verdijnt de helft
     getAllTodos()
-    
 }
 
